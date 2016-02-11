@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Survival - Arena</title>
     <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+    <script type="text/javascript" src="js/libs/jquery/jquery.min.js"></script>
   </head>
   <body>
     <header class="nav">
@@ -14,31 +15,62 @@
           <a href="index_ownStyle.html">Home</a>
         </li>
         <li>
-          Profil
+          Status
         </li>
         <li>
           Fight
         </li>
+        <li>
+          Skill-Tree
+        </li>
+        <li>
+          Map
+        </li>
       </ul>
     </header>
-    <div class="content left">
-
+    <div class="container">
+      <section>
+        <h1>Darwins world</h2>
+          <div class="stats">
+            <p>
+              Race: Goblin(ground, sea, sky)<br>
+              Monster-rank: 1 <br>
+              Soul-Level:   1<br>
+              Soul-Exp:     0 / 10 <br>
+              Darwin-Ability: Tough Skin (1)<br>
+              ---Reduces damage by 1--- <br>
+              <br>
+            </p>
+          </div>
+        <div class="player">
+          Undefined
+        </div>
+        <button onclick="fight();">Fight</button>
+        <div class="enemy">
+          Undefined
+        </div>
+        <p>
+          <br>
+          Fight - SurivivalRound (3-5 Fights, rank up) - Sleep <br>
+          Speed --> First Hit
+        </p>
+      </section>
     </div>
-    <div class="content main">
-
-    </div>
-    <div class="content right">
-
+    <div id="freepik">
+      <a href="http://www.freepik.com">Designed by Freepik</a>
     </div>
     <footer>
       <p>
-        Here I will try to build a simple Game, where 9 Fighters randomly attack each other.
-        <br>
-        Your Fighter can be upgraded, and equiped with artefacts. Also there are 3 Classes: <br>
-        Bowmen(High Dps / Crit), Warrior(High Health), Wizard(AoE-Damage)
-        <br>
-        Maybe also: Alliances, sell / buy Fighter, Special Skills
+        Name soul-level soul-body darwin-ability current-race
+      </p>
+      <p>
+        attribute monster-rank soul-exp level
+      </p>
+      <p>
+        player-vs-player-survival
       </p>
     </footer>
+    <script type="text/javascript" src="js/game/basic.js">
+    </script>
   </body>
 </html>
